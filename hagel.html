@@ -1,0 +1,32 @@
+<head>
+  <title>hagel</title>
+</head>
+
+<body>
+  {{> meta}}
+  {{> wiki}}
+</body>
+
+<template name="meta">
+  
+  <h1>hagel edit</h1>
+    <input type="button" class="erase" value="ERASE" />
+  <h2>
+    ...
+    <span contenteditable>{{title}}</span>
+  </h2>
+
+</template>
+
+<template name="wiki">
+
+  <article id="documentBody" contenteditable>
+      {{content}}
+  </article>
+
+  <h2>Preview</h2>
+  <article id="preview">
+
+  </article>
+
+</template>

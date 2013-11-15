@@ -1,0 +1,44 @@
+/* CSS declarations go here */
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.5em;
+    width: 60%;
+    min-width: 300px;
+    margin: 3em auto;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+h2 span:focus {
+    color: aquamarine;
+}
+
+input.erase {
+    float: right;
+}
+
+article[contenteditable], span[contenteditable] {
+    color: grey;
+    outline: none;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+
+#documentBody, #preview {
+    margin: 1em 0 5em 0;
+    font-size: .8em;
+    padding: 1em .5em 1em .25em;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+#preview {
+    min-height: 9em;
+}
+
+#documentBody:focus {
+    border-top: 2px solid aquamarine;
+    border-bottom: 2px solid aquamarine;    
+}
